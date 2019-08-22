@@ -22,10 +22,21 @@ namespace FizzBuzzTdd.Test
         }
 
         [TestCase(3)]
+        [TestCase(6)]
+        [TestCase(9)]
         public void GetValueIfMultipleOf3ReturnFizz(int input)
         {
             var output = FizzBuzz.GetValue(input);
             Assert.AreEqual("Fizz", output);
+        }
+
+        [TestCase(5)]
+        [TestCase(10)]
+        [TestCase(20)]
+        public void GetValueIfMultipleOf5ReturnBuzz(int input)
+        {
+            var output = FizzBuzz.GetValue(input);
+            Assert.AreEqual("Buzz", output);
         }
     }
 }
