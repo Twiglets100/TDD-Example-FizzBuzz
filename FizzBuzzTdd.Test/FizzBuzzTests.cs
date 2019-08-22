@@ -9,11 +9,12 @@ namespace FizzBuzzTdd.Test
         {
         }
 
-        [Test]
-        public void GetValueIf1Return1()
+        [TestCase(1)]
+        [TestCase(2)]
+        public void GetValueIfDefaultReturnDefault(int input)
         {
             // Arrange
-            var input = 1;
+//            var input = 1;
             // Act
             var output = FizzBuzz.GetValue(input);
             // Assert
