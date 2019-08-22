@@ -18,7 +18,7 @@ namespace FizzBuzzTdd.Test
             // Act
             var output = FizzBuzz.GetValue(input);
             // Assert
-            Assert.AreEqual("1", output);
+            Assert.AreEqual(input.ToString(), output);
         }
     }
 }
