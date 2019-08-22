@@ -38,5 +38,13 @@ namespace FizzBuzzTdd.Test
             var output = FizzBuzz.GetValue(input);
             Assert.AreEqual("Buzz", output);
         }
+
+        [TestCase(15)]
+        [TestCase(30)]
+        public void GetValueIfMultipleOf3And5ReturnFizzBuzz(int input)
+        {
+            var output = FizzBuzz.GetValue(input);
+            Assert.AreEqual("FizzBuzz", output);
+        }
     }
 }
