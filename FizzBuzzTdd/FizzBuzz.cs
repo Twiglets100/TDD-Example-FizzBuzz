@@ -8,6 +8,12 @@ namespace FizzBuzzTdd
             {
                 return "Fizz";
             }
+
+            if (input % 5 == 0)
+            {
+                return "Buzz";
+            }
+            
             return input.ToString();
         }
     }
